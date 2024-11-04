@@ -3,56 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxium</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Galaxium: The Future of Human Life in Space</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Galaxium</h1>
-        <nav>
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <p>Building the Future of Human Life on Mars, Moon, and Beyond</p>
+        <button onclick="scrollToSection('vision')">Discover More</button>
     </header>
-    <main>
-        <section id="intro" class="intro">
-            <h2>Welcome to Galaxium</h2>
-            <p>Building the future of space habitation and exploration using blockchain technology.</p>
-        </section>
-        <section id="mission" class="details">
-            <h3>Our Mission</h3>
-            <p>To enable sustainable human life and exploration on Mars, the Moon, and beyond by leveraging Starship and blockchain technology.</p>
-            <p>This project aims to create decentralized, transparent, and accessible solutions for space habitation, resource management, and interplanetary travel.</p>
-        </section>
-        <section id="features" class="features">
-            <h3>Features</h3>
-            <ul>
-                <li>Decentralized Space Habitation</li>
-                <li>Transparent Resource Management</li>
-                <li>Interplanetary Travel Solutions</li>
-                <li>Blockchain-based Collaboration Tools</li>
-            </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h3>Contact Us</h3>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Galaxium. All rights reserved.</p>
+
+    <section id="vision" class="section">
+        <h2>Our Vision</h2>
+        <p>To pioneer sustainable human life on Mars and the Moon using Starship and blockchain, creating decentralized, transparent systems for space habitats, resources, and travel. We aim to democratize space access, fostering global collaboration for humanity's future in space.</p>
+    </section>
+
+    <section id="use-cases" class="section">
+        <h2>Use Cases</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Habitats in Space</h3>
+                <p>Develop sustainable habitats on Mars and the Moon, making life in space a reality.</p>
+            </div>
+            <div class="card">
+                <h3>Humans in Space</h3>
+                <p>Enabling safe, accessible, and collaborative human presence in space.</p>
+            </div>
+            <div class="card">
+                <h3>Using Starship</h3>
+                <p>Utilizing Starship to facilitate interplanetary travel and resource transport.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <h2>Key Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Space Vehicles</h3>
+                <p>Advanced space vehicles for interplanetary travel and exploration.</p>
+            </div>
+            <div class="card">
+                <h3>Spacesuits</h3>
+                <p>Innovative spacesuits designed for survival and comfort in outer space.</p>
+            </div>
+            <div class="card">
+                <h3>Satellite Repair</h3>
+                <p>Blockchain-based tools for efficient satellite repair and maintenance.</p>
+            </div>
+            <div class="card">
+                <h3>Space Situational Awareness</h3>
+                <p>Real-time, decentralized space monitoring and resource tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <p>If you are interested in partnering, investing, or contributing, contact us below.</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="submitForm()">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Galaxium. All Rights Reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
