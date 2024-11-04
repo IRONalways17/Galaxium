@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.intro, .details {
+    margin-bottom: 40px;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
