@@ -1,93 +1,108 @@
-/* styles.css */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: url('space-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
+    color: #fff;
+    background: #0d0d2d;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
     text-align: center;
-    overflow-x: hidden;
+    padding: 5rem;
+    background: #1c1c3d;
+    color: #fff;
 }
 
-header {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+.header h1 {
+    font-size: 3rem;
+}
+
+.header button {
+    padding: 0.75rem 2rem;
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Sections */
+.section {
+    padding: 4rem;
+    text-align: center;
+    background: #1e1e40;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+.cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-h1 {
-    margin: 0;
-    font-size: 3em;
+.card {
+    background: #29294d;
+    padding: 2rem;
+    width: 250px;
+    border-radius: 8px;
+    transition: transform 0.2s;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.card:hover {
+    transform: scale(1.05);
 }
 
-nav ul li {
-    margin: 0 15px;
+.card h3 {
+    color: #ff8c00;
+    margin-bottom: 1rem;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-main {
-    padding: 50px 20px;
-}
-
-.intro, .details, .features, .contact {
-    margin-bottom: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.features ul {
-    list-style: none;
-    padding: 0;
-}
-
-.features ul li {
-    margin: 10px 0;
-}
-
-.contact form {
+/* Contact Form */
+#contactForm {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.contact form label {
-    margin: 10px 0 5px;
-}
-
-.contact form input, .contact form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
+#contactForm input, #contactForm textarea {
+    padding: 1rem;
     border-radius: 5px;
+    border: 1px solid #444;
+    background: #1c1c3d;
+    color: #fff;
+    width: 100%;
 }
 
-.contact form button {
-    padding: 10px 20px;
+#contactForm button {
+    padding: 1rem;
+    background: #ff8c00;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    background: #007BFF;
-    color: white;
-    font-size: 1em;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-footer {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #101030;
 }
